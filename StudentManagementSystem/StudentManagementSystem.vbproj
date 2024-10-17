@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <StartupObject>StudentManagementSystem.frmSplashScreen</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
+    <MyType>WindowsForms</MyType>
+    <ImportedNamespaces>MySql.Data=False,System.Data=False,System.Drawing=False,System.Windows.Forms=False,Microsoft.VisualBasic=True,System=True,System.Collections=True,System.Collections.Generic=True,System.Diagnostics=True,System.Linq=True,System.Xml.Linq=True,System.Threading.Tasks=True,StudentManagementSystem=True</ImportedNamespaces>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Import Include="MySql.Data" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\MySql.Data.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="My Project\Application.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
